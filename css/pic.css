@@ -1,0 +1,59 @@
+.nav .open>a:focus{
+    border-color:#e7e7e7;
+}
+.ep_box {
+    position: relative;
+}
+.ep_info {
+    display: block;
+    top: -30px;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    line-height: 30px;
+    text-overflow : ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.ep_like {
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    line-height: 20px;
+    text-overflow : ellipsis;
+    white-space: nowrap;
+}
+.item {
+	width: 250px;
+	margin: 10px;
+	float: left;
+}
+body{
+    font-family: Roboto,"PingFang TC","黑體-繁","Heiti TC","蘋果儷中黑","Apple LiGothic Medium","微軟正黑體","Microsoft JhengHei",sans-serif;
+}
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}

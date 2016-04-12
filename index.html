@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SeeDcard</title>
+    <!-- css -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/ico">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/starter-template.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/layerslider.css" rel="stylesheet" type="text/css">
+    <link href="css/gh-fork-ribbon.css" rel="stylesheet" type="text/css">
+    <link href="css/pic.css" rel="stylesheet" type="text/css">
+    <!-- script -->
+    <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/2.1.0/jquery.infinitescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+    <script src="js/card.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="NAVbrand" class="navbar-brand" style="padding-top:6px;">
+            <img style="width:40px; height:40px; " src="img/logo.png">
+            <span> SeeDcard</span>
+            <span class="active glyphicon glyphicon-map-marker" id="now"></span>
+            <span id="loading" class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li id="all"  class="kind"><a onclick="kind('all')" href="#">全部</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">文章<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li id="funny" class="kind"><a onclick="kind('funny')" href="#">有趣</a></li>
+                <li id="trending" class="kind" ><a onclick="kind('trending')" href="#">時事</a></li>
+                <li id="talk"  class="kind" ><a onclick="kind('talk')" href="#">閒聊</a></li>
+                <li id="bg"  class="kind" ><a onclick="kind('bg')" href="#">男女</a></li>
+                <li id="girl"  class="kind" ><a onclick="kind('girl')" href="#">女孩</a></li>
+                <li id="boy"  class="kind" ><a onclick="kind('boy')" href="#">男孩</a></li>
+                <li id="mood"  class="kind" ><a onclick="kind('mood')" href="#">心情</a></li>
+                <li id="literature"  class="kind" ><a onclick="kind('literature')" href="#">詩文</a></li>
+                <li id="whysoserious"  class="kind" ><a onclick="kind('whysoserious')" href="#">廢文</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">休閒<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li id="acg" class="kind"><a onclick="kind('acg')" href="#">動漫</a></li>
+                <li id="game" class="kind"><a onclick="kind('game')" href="#">遊戲</a></li>
+                <li id="3c" class="kind"><a onclick="kind('3c')" href="#">3C</a></li>
+                <li id="music"  class="kind" ><a onclick="kind('music')" href="#">音樂</a></li>
+                <li id="travel"  class="kind" ><a onclick="kind('travel')" href="#">旅遊</a></li>
+                <li id="photography"  class="kind" ><a onclick="kind('photography')" href="#">攝影</a></li>
+                <li id="movie"  class="kind" ><a onclick="kind('movie')" href="#">影劇</a></li>
+                <li id="horoscopes"  class="kind" ><a onclick="kind('horoscopes')" href="#">星座</a></li>
+                <li id="sport"  class="kind" ><a onclick="kind('sport')" href="#">運動</a></li>
+                <li id="pet"  class="kind" ><a onclick="kind('pet')" href="#">寵物</a></li>
+                <li id="food"  class="kind" ><a onclick="kind('food')" href="#">美食</a></li>
+                <li id="handicrafts"  class="kind" ><a onclick="kind('handicrafts')" href="#">手作</a></li>
+                <li id="sex"  class="kind" ><a onclick="kind('sex')" href="#">西斯</a></li>
+                <li id="marvel"  class="kind" ><a onclick="kind('marvel')" href="#">靈異</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li id="job"  class="kind" ><a onclick="kind('job')" href="#">工作</a></li>
+                <li id="studyabroad"  class="kind" ><a onclick="kind('studyabroad')" href="#">留學</a></li>
+                <li id="freshman"  class="kind" ><a onclick="kind('freshman')" href="#">新生季</a></li>
+                <li id="course"  class="kind" ><a onclick="kind('course')" href="#">課程</a></li>
+                <li id="exam"  class="kind" ><a onclick="kind('exam')" href="#">考古題</a></li>
+                <li id="dcard"  class="kind" ><a onclick="kind('dcard')" href="#">Dcard</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#" data-toggle="modal" data-target="#about">關於我們</a></li>
+            <li id="new" class="mode"><a onclick="mode('new')" href="#">最新</a></li>
+            <li id="hot" class="mode"><a onclick="mode('hot')" href="#">熱門</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="about" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">關於我們</h4>
+          </div>
+          <div class="modal-body">
+            <pre>
+我們是來自嘉義大學 一群熱愛Coding的學生
+在上個週末 我們參加了交成主辦的ICAHack-綠色城市黑客松
+在24小時不停的Coding過後 SeeDcard就這麼誕生了！
+
+感謝這場黑客松的舉辦 讓我們有機會誕生這麼好的成品
+感謝petneed.me這個網站的開源 讓我們的前端可以如此漂亮
+
+關於網站的開源 由於本網站還有許多地方的不完善 程式碼也非常的混亂
+我們打算未來調整架構後 在釋出我們的程式碼 讓更多人可以幫助我們
+
+如果你有想聯絡我們 歡迎使用以下的電子信箱 我們會盡快的回覆你
+
+s1013045 at mail.ncyu.edu.tw
+
+開發者：DuckLL, KShih, tedliao, mike850317
+
+------------------(更新)----------------------
+目前網站架設在我們學校的實驗室裡
+我們學校的網路最近非常的慢 所以請大家見諒
+
+目前已知bug
+1.手機版無法開啟文章視窗(請使用新視窗開啟)
+
+徵求
+1.網路快速的Server主機
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="starter-template">
+        <a id="next" href="./page.php?page=2" style="display: none;"></a>
+        <div id="content">
+          <div class="item element isotope-item" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+  </body>
+</html>

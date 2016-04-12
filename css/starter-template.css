@@ -1,0 +1,206 @@
+@font-face {
+	font-family:SourceHanSans;
+	src: local(Source Han Sans TWHK-Regular),
+	url(../fonts/SourceHanSansTWHK-Regular.otf) format("opentype");
+}
+body {
+	padding-top: 50px;
+	background-color:#666;
+}
+img{
+	border-radius: 5px;  /*圓角*/
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+}
+div{
+	border-radius: 5px;  /*圓角*/
+
+    -moz-border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+}
+td{
+    text-align: center;
+}
+.starter-template {
+	padding: 40px 15px;
+	text-align: left;
+	font-size: large;
+	background-color:#999;
+
+	border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+}
+.btn {
+	margin: 5px;
+}
+/*廣告輪播的寬度大小*/
+.coverflow{max-width: 1100px;}
+
+.mwt-title-btn{
+	bottom: 10px;
+}
+.block{
+	border: 10px 10px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background-color: #CCC;
+	border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+}
+.gold{
+	border: 10px 10px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background-color: rgb(240,230,200);
+	border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+}
+.silver{
+	border: 10px 10px;
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background-color: rgb(180,180,180);
+	border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+}
+#item1{
+
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+    top: 50%;  /*設置垂直位置*/
+
+   	left: -10px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+    background: #ffffff;  /*背景顏色*/
+
+    padding: 10px 20px;
+
+    border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+}
+
+#item1:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+    left: 10px;
+
+}
+#item2{
+
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+    top: 70%;  /*設置垂直位置*/
+
+   	left: -10px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+    background: #ffffff;  /*背景顏色*/
+
+    padding: 10px 20px;
+
+    border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+}
+
+#item2:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+    left: 10px;
+
+}
+
+#seesee{
+
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+    top: 25%;  /*設置垂直位置*/
+
+    right: -50px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+    background: #ffffff;  /*背景顏色*/
+
+    padding: 10px 20px;
+
+    border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+}
+#seesee:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+    right: -10px;
+
+}
+
+#label{
+
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+    top: 40%;  /*設置垂直位置*/
+
+    right: -300px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+    background: #ffffff;  /*背景顏色*/
+
+    padding: 10px 20px;
+
+    border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+}
+
+#label:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+    right: -10px;
+
+}
+#type{
+
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+
+    top: 60%;  /*設置垂直位置*/
+
+    right: -250px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+
+    background: #ffffff;  /*背景顏色*/
+
+    padding: 10px 20px;
+
+    border-radius: 10px;  /*圓角*/
+
+    -moz-border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+
+}
+
+#type:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+
+    right: -10px;
+
+}
